@@ -1,0 +1,13 @@
+<div class="row">
+    <header>
+        <app-logo-ap></app-logo-ap>
+        <div class="login">
+            <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!islogged">Ingreso</button>
+            <button type="button" class="btn btn-outline-light" (click)="onLogout()" *ngIf="islogged">Salir</button>
+        </div>
+        <div class="logo-social"><app-logo-social></app-logo-social></div>
+    </header>
+</div>
+<div class="banner">
+    <app-banner></app-banner>
+</div>

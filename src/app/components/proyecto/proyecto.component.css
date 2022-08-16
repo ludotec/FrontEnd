@@ -1,0 +1,28 @@
+.row{
+    padding: 20px;
+    background-color: #01D7F1;
+}
+.container{
+    width: auto;
+}
+.parte1{
+    text-align: justify;
+}
+
+#linkImg{
+    width: 100px;
+    height: 40px;
+    background-color: #ffffff;
+    box-shadow: 8px 8px 30px #000000;
+}
+
+@media (max-width: 575px){
+    h1{
+        margin-bottom: 30px;
+    }
+    h1, .parte1, .parte2{
+        text-align: center;
+    }
+
+}
+

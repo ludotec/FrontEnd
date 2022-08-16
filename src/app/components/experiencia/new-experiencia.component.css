@@ -1,0 +1,21 @@
+.row{
+   margin: 20px;
+   max-width: 600px;
+}
+.form-group{
+    margin: 20px;
+}
+button{
+    margin-left: 120px;
+}
+.label{
+    margin-left: 120px;
+}
+label{
+    margin-right: 8px;
+}
+@media (max-width: 450px){
+    button{
+      margin-left: 90px;      
+    }
+}
