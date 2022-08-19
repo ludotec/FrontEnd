@@ -1,28 +1,26 @@
 
 <div class="row">
     <h1>Información Académica</h1>
-    <div class="col-lg-2">
-        <button type="button" class="btn btn-dark" (click)="openNewEdu()" *ngIf="isLogged">
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+        <button type="button" class="btn btn-dark" style="float: inherit;" (click)="openNewEdu()" *ngIf="isLogged">
             Nueva Educacion
         </button>
     </div>
 
-    <div class="col lg 1"></div>
-    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+    <div class="col-lg-1"></div>
+    <div class="col-lg-11">
         <table class="table">
             <tbody>
                 <tr *ngFor="let Educacion of educa">
                     <td>
                         <h2>{{Educacion.nombreE}}</h2>
                     </td>
-                    <td>{{Educacion.descripcionE}}</td>
+                    <td style="vertical-align: bottom;">{{Educacion.descripcionE}}</td>
                     <td *ngIf="isLogged">
+                        <button class="btn btn-danger" style="margin: 0 10px 0 10px;" (click)="delete(Educacion.id)">
+                        <i class="bi bi-trash-fill"></i></button>
                         <button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}">
-                                <i class="bi bi-pencil-fill"></i> EDITAR</button>
-                    </td>
-                    <td *ngIf="isLogged">
-                        <button class="btn btn-danger" (click)="delete(Educacion.id)">
-                            <i class="bi bi-trash-fill"></i> BORRAR</button>
+                        <i class="bi bi-pencil-fill"></i></button>
                     </td>
                 </tr>
             </tbody>

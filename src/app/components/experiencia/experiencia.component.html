@@ -1,13 +1,13 @@
 
 <div class="row">
     <h1>Experiencia laboral</h1>
-    <div class="col-lg-2">
-        <button type="button" class="btn btn-dark" (click)="openNewExp()" *ngIf="isLogged">
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+        <button type="button" class="btn btn-dark" style="float: inherit;" (click)="openNewExp()" *ngIf="isLogged">
             Nueva Experiencia
         </button>
     </div>
 
-    <div class="col lg 1"></div>
+    <div class="col-lg-1"></div>
     <div class="col-lg-11">
         <table class="table">
             <tbody>
@@ -15,14 +15,12 @@
                     <td>
                         <h2>{{Experiencia.nombreE}}</h2>
                     </td>
-                    <td>{{Experiencia.descripcionE}}</td>
+                    <td style="vertical-align: bottom;">{{Experiencia.descripcionE}}</td>
                     <td *ngIf="isLogged">
+                        <button class="btn btn-danger" style="margin: 0 10px 0 10px;" (click)="delete(Experiencia.id)">
+                        <i class="bi bi-trash-fill"></i></button>
                         <button class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}">
-                                <i class="bi bi-pencil-fill"></i> EDITAR</button>
-                    </td>
-                    <td *ngIf="isLogged">
-                        <button class="btn btn-danger" (click)="delete(Experiencia.id)">
-                            <i class="bi bi-trash-fill"></i> BORRAR</button>
+                        <i class="bi bi-pencil-fill"></i></button>
                     </td>
                 </tr>
             </tbody>

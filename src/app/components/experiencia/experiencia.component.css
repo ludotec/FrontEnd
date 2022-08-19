@@ -7,6 +7,9 @@ div{
 h2, h3{
     display: inline;
 }
+button{
+    float: right;
+}
 
 @media (max-width: 575px){
     h1{
