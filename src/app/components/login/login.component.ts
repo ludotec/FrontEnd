@@ -13,6 +13,7 @@ export class LoginComponent implements OnInit {
   isLogged = false;
   isLogginFail = false;
   roles: string[] = [];
+  label:  string;
   
   form: any = {
     nombreUsuario: null,
@@ -41,6 +42,7 @@ export class LoginComponent implements OnInit {
     }, error: err =>{
         this.isLogged = false;
         this.isLogginFail = true;
+        alert(this.label = "Contraseña o usuario incorrectos")
       }
     })
   }

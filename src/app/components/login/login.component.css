@@ -1,17 +1,26 @@
+h2{
+  position:fixed;
+  top: 5px;
+  left: 0;
+  right: 0;
+  text-shadow: 1px 1px 8px #6b9fb5;
+}
+
 .btn-color{
     background-color: #0e1c36;
     color: #fff;
-    
   }
   
   .profile-image-pic{
-    height: 200px;
-    width: 200px;
+    height: 160px;
+    width: 160px;
     object-fit: cover;
   }
+  #img-login{
+    margin-top: 10px;
   
-  
-  
+  }
+     
   .cardbody-color{
     background-color: #ebf2fa;
   }
