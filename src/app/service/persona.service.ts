@@ -12,7 +12,7 @@ const httpOptions = {
 })
 export class PersonaService {
 
-  URL = 'http://localhost:8080/personas/';
+  URL = 'https://backendcaf.herokuapp.com/personas/';
   constructor(private http:HttpClient) { }
 
   public getPersona(): Observable<any>{

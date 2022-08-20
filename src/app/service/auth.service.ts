@@ -5,7 +5,7 @@ import { JwtDto } from '../Model/jwt-dto';
 import { LoginUsuario } from '../Model/login-usuario';
 import { NuevoUsuario } from '../Model/nuevo-usuario';
 
-const authURL = 'http://localhost:8080/auth/'
+const authURL = 'https://backendcaf.herokuapp.com/auth/'
   
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })

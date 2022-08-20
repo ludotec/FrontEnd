@@ -12,7 +12,7 @@ const httpOptions = {
 })
 export class EducacionService {
 
-  eduURL = 'http://localhost:8080/educacion/'; 
+  eduURL = 'https://backendcaf.herokuapp.com/educacion/'; 
   constructor(private http: HttpClient) { }
 
   public list() : Observable<any>{

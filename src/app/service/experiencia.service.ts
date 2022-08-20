@@ -12,7 +12,7 @@ const httpOptions = {
 })
 export class ExperienciaService {
 
-  expURL = 'http://localhost:8080/explab/'
+  expURL = 'https://backendcaf.herokuapp.com/explab/'
   constructor(private http: HttpClient) { }
 
   public list() : Observable<any>{
