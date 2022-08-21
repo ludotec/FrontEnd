@@ -1,0 +1,32 @@
+<div class="container" *ngIf="proye">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombreP">Nombre del Proyecto</label>
+                    <input type="text" name="nombreP" id="nombreP" class="from-control" [(ngModel)]="proye.nombreP"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionP">Descripción</label>
+                    <textarea type="text" name="descripcionP" id="descripcionP" class="from-control"
+                        [(ngModel)]="proye.descripcionP" required>
+                    </textarea>
+                </div>
+                <div class="form-group">
+                    <label for="lenguage">Descripción</label>
+                    <input type="text" name="lenguage" id="lenguage" class="from-control"
+                        [(ngModel)]="proye.lenguage" required>
+                </div>
+                <div class="form-group">
+                    <label for="linkP">Descripción</label>
+                    <input type="text" name="linkP" id="linkP" class="from-control"
+                        [(ngModel)]="proye.linkP" required>
+                </div>
+                <div>
+                    <button class="btn btn-primary">Modificar Proyecto</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

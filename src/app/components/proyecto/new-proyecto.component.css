@@ -1,0 +1,17 @@
+.row{
+    margin: 20px;
+    max-width: 600px;
+ }
+ .form-group label{
+    display: block;
+    padding: 5px 5px;
+}
+
+.form-group input{
+ display: block;
+ font-size: 18px;
+}
+ 
+button{
+    margin-top: 10px;
+}

@@ -4,6 +4,7 @@ import { EditEducacionComponent } from './components/educacion/edit-educacion.co
 import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
+import { EditProyectoComponent } from './components/proyecto/edit-proyecto.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,9 @@ const routes: Routes = [
    },
    {
     path:'editedu/:id', component: EditEducacionComponent
+   },
+   {
+    path:'editpro/:id', component: EditProyectoComponent
    }
    
 ];

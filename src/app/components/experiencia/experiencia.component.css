@@ -1,24 +1,19 @@
 .row{
     padding: 20px;
-}
-div{
     background-color: #01D7F1;
 }
-h2, h3{
-    display: inline;
+.button{
+    margin-top: 20px;
 }
-button{
-    float: right;
-}
-
 @media (max-width: 575px){
     h1{
         margin-bottom: 30px;
     }
-    li{
-        list-style-type: none;
-    }
     div{
         text-align: center;
     }
+    #descrpcion{
+        text-align: center;
+    }
+
 }

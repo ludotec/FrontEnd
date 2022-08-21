@@ -1,41 +1,30 @@
 <div class="container-fluid">
     <div class="row">
         <h1>Mis Proyectos</h1>
-        <div class="container">
-            <div class="col-sm-12 col-md-7 col-lg-7 parte1">
-                <h3>Game Tic-Tac-Toe</h3>
-                <p><b>(C++)</b></p>
-                <p>Juego clásico realizado como trabajo práctico evaluado en 1° año de la tecnicatura de desarrollo de
-                    software.
-                    Este trabajo se usó para poner en práctica lo aprendido en la materia Estructura de datos y
-                    algoritmos dada por el profesor Dueñas Emiliano.
-                    La tarea fué evaluada con nota 10. Fué mi entrada a la programación por cuenta propia sin seguir un
-                    tutorial.
-                </p>
+        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+            <button type="button" class="btn btn-dark" style="float: inherit;" (click)="openNewPro()" *ngIf="isLogged">
+                Nuevo Proyecto
+            </button>
+        </div>
+
+        <div class="container" *ngFor="let Proyecto of proye ">
+            <div  id="descripcion" class="col-sm-12 col-md-7 col-lg-7">
+                <h3>{{Proyecto.nombreP}}</h3>
+                <p><b>{{Proyecto.lenguage}}</b></p>
+                <p>{{Proyecto.descripcionP}}</p>
             </div>
             <div class="col-sm-12 col-md-3 col-lg-3 parte2">
-                <a id="ImgRef" href="https://www.github.com/ludotec/Ites" target="_blank"><img id="linkImg"
-                        class="img-fluid" src="../../../assets/github_logo.png" alt=""></a>
+                <a id="ImgRef" href="{{Proyecto.linkP}}" target="_blank"><img id="linkImg" class="img-fluid"
+                        src="../../../assets/github_logo.png" alt=""></a>
+            </div>
+            <div class="button" *ngIf="isLogged">
+                <button class="btn btn-danger" style="margin: 0 10px 0 10px;" (click)="delete(Proyecto.id)">
+                    <i class="bi bi-trash-fill"></i></button>
+                <button class="btn btn-light" routerLink="/editpro/{{Proyecto.id}}" style="margin-right: 10px;">
+                    <i class="bi bi-pencil-fill"></i></button>
+
             </div>
             <hr>
-            <div class="col-sm-12 col-md-7 col-lg-7 parte1">
-                <h3>Game HangMan</h3>
-                <p><b>(Java)</b></p>
-                <p>Juego clásico realizado como trabajo práctico evaluado en 2° año de la tecnicatura de desarrollo de
-                    software.
-                    Este trabajo se usó para poner en práctica lo aprendido en la materia Programacion II dada por el
-                    profesor Dueñas Emiliano.
-                    La tarea fué evaluada con nota 10. Fué mi entrada a la programación ya con interfáz gráfica, la
-                    realización de este juego
-                    se me hizo verdaderamente muy divertido logrando generarme satisfacción. También fué evaluada con
-                    nota 10 y además
-                    una felicitación de parte del profesor.
-                </p>
-            </div>
-            <div class="col-sm-12 col-md-3 col-lg-3 parte2">
-                <a id="ImgRef" href="https://www.github.com/ludotec/hangmanGame" target="_blank"><img id="linkImg"
-                        class="img-fluid" src="../../../assets/github_logo.png" alt=""></a>
-            </div>
         </div>
     </div>
 </div>

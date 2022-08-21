@@ -2,27 +2,25 @@
     padding: 20px;
     background-color: #01D7F1;
 }
-.container{
-    width: auto;
-}
-.parte1{
-    text-align: justify;
-}
 
 #linkImg{
     width: 100px;
     height: 40px;
     background-color: #ffffff;
-    box-shadow: 8px 8px 10px #000000;
+    box-shadow: 6px 6px 10px #000000;
 }
-
+.button{
+    margin-top: 20px;
+}
 @media (max-width: 575px){
     h1{
         margin-bottom: 30px;
     }
-    h1, .parte1, .parte2{
+    div{
+        text-align: center;
+    }
+    #descrpcion{
         text-align: center;
     }
 
 }
-
